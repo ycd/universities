@@ -10,10 +10,12 @@ from fastapi_utils.tasks import repeat_every
 from typing import List, Optional
 import requests
 from asyncpg.exceptions import UniqueViolationError
+import os
 
 
 ## Postgres Database
-DATABASE_URL = "postgresql://user:password@host:5432/universities"
+# DATABASE_URL = "postgresql://user:password@host:5432/universities"
+DATABASE_URL = os.environ.get("TRAVIS")
 database = databases.Database(DATABASE_URL)
 metadata = sqlalchemy.MetaData()
 
