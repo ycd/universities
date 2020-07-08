@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+psycopg2-binary
+sqlalchemy
+fastapi_utils
+requests
+databases
+requests
+asyncpg
+pytest
