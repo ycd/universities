@@ -35,8 +35,8 @@ universities = sqlalchemy.Table(
 	sqlalchemy.Column("alpha_two_code", sqlalchemy.String),
 	sqlalchemy.Column("country"       , sqlalchemy.String),
 	sqlalchemy.Column("web_pages"     , sqlalchemy.ARRAY(sqlalchemy.String)),
-    sqlalchemy.Column("domains"       , sqlalchemy.ARRAY(sqlalchemy.String)),
-    sqlalchemy.Column("state_province", sqlalchemy.String),
+        sqlalchemy.Column("domains"       , sqlalchemy.ARRAY(sqlalchemy.String)),
+        sqlalchemy.Column("state_province", sqlalchemy.String),
 )
 
 engine = sqlalchemy.create_engine(
@@ -66,7 +66,7 @@ async def shutdown():
 
 
 @repeat_every(seconds=86400)
-# @app.on_event("startup")
+@app.on_event("startup")
 async def update_database():
     """
     Asynchronous database updater, runs itself in 86400 seconds | 1 day
