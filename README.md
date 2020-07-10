@@ -15,7 +15,7 @@
 * **Documentation** - Have an automatic API documentation web user interface thanks to FastAPI
 * **Open source** - Everything from the code base is opensource and free to use under a permissive MIT license.
 
-## Try it online from automatic generated API [Documentation](https://universitiesapi.herokuapp.com/docs) now! 
+## Try it online with the [Documentation](https://universitiesapi.herokuapp.com) now! 
 
 ## How to use & query parameters :bulb:
 ### You can search by:
