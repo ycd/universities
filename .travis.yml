@@ -1,12 +1,11 @@
 language: python
 python:
-  - "3.7"  
+  - "3.7"
   - "3.8"
 services:
   - postgresql
 install:
   - pip install -r requirements.txt
 script:
-  - cd tests
+  - cd app/tests
   - pytest test_main.py
-  
