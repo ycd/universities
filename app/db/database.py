@@ -4,7 +4,7 @@ import databases
 
 
 ## Postgres Database
-DATABASE_URL = "postgresql://yagu:yagu123@localhost:5432/universities"
+DATABASE_URL = "postgresql://user:password@localhost:5432/universities"
 # DATABASE_URL = os.environ.get("TRAVIS")
 database = databases.Database(DATABASE_URL)
 metadata = sqlalchemy.MetaData()
